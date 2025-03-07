@@ -1,0 +1,4 @@
+[submodule "skalisaaa.github.io"]
+	path = skalisaaa.github.io
+	url = git@github.com:skalisaaa/skalisaaa.github.io.git
+	branch = main

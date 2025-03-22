@@ -2,3 +2,7 @@
 	path = skalisaaa.github.io
 	url = git@github.com:skalisaaa/skalisaaa.github.io.git
 	branch = main
+[submodule "public"]
+	path = public
+	url = git@github.com:skalisaaa/skalisaaa.github.io.git
+	branch = main

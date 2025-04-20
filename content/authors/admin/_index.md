@@ -39,7 +39,18 @@ profiles:
     url: https://github.com/skalisaaa
   - icon: academicons/orcid
     url: https://orcid.org/0009-0009-0062-6541
-
+  - icon: academicons/academia
+    url: https://independent.academia.edu/АлисаСкобеева
+  - icon: brands/twitter
+    url: https://elibrary.ru/project_user_tools.asp
+  - icon: brands/github
+    url: https://scholar.google.com/citations?view_op=new_articles&hl=ru&imq=Alice+Skobeeva#
+  - icon: academicons/mendeley
+    url: https://www.mendeley.com/search/
+  - icon: academicons/researchgate
+    url: https://www.researchgate.net/
+  - icon: academicons/arxiv
+    url: https://arxiv.org/
 interests:
   - Data Science
   - Artificial Intelligence

@@ -1,20 +1,24 @@
-name: Deploy to GitHub Pages
-on:
-  push:
-    branches: [ "main" ]
+name: Deploy Hugo
+on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
         with:
-          go-version: '1.21'
-      - run: hugo -D
+          submodules: true
+      
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.125.7'  # Проверь актуальную версию!
+
+      - run: hugo -D --minify
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: main  # или gh-pages, если у тебя ветка не main
-          external_repository: skalisaaa/skalisaaa.github.io
+          external_repository: skalisaaa/skalisaaa.github.io  # Имя твоего репозитория!
+          publish_branch: main  # Или gh-pages, если используешь эту ветку
